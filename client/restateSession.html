@@ -1,0 +1,66 @@
+<template name="restateSession">
+<div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+         <!--<button id="test"> console.log the data context</button>-->
+         <div class="view_thinker_div">
+           <div class='row'>
+            <div class='col-md-4'>  
+              <b>Situation</b>:<br>             
+              {{this.restateSession.situation}}<br>
+             </div>
+             <div class='col-md-4'>
+               {{#each situationRestate}}
+                  <b>helper</b>: {{helper_restate}}        
+               {{/each}}
+             </div>
+           </div>         
+         </div>
+         
+         <div class="view_thinker_div">
+           <div class='row'>
+            <div class='col-md-4'>  
+              <b>Thoughts</b>:<br>             
+              {{this.restateSession.thoughts}}<br>
+             </div>
+             <div class='col-md-4'>
+               {{#each thoughtsRestate}}
+                  <b>helper</b>: {{helper_restate}}        
+               {{/each}}
+             </div>
+           </div>         
+         </div>
+         
+         <div class="view_thinker_div">
+           <div class='row'>
+            <div class='col-md-4'>  
+              <b>Feelings</b>:<br>             
+              {{this.restateSession.feelings}}<br>
+             </div>
+             <div class='col-md-4'>
+               {{#each feelingsRestate}}
+                  <b>helper</b>: {{helper_restate}}        
+               {{/each}}
+             </div>
+           </div>         
+         </div>
+         
+         <div class="view_thinker_div">
+           <div class='row'>
+            <div class='col-md-4'>  
+              <b>Behaviors</b>:<br>             
+              {{this.restateSession.behaviors}}<br>
+             </div>
+             <div class='col-md-4'>
+               {{#each behaviorRestate}}
+                  <b>helper</b>: {{helper_restate}}        
+               {{/each}}
+             </div>
+           </div>         
+         </div>        
+      </div>
+    </div> 
+  </div>   
+</template>
+
+
