@@ -1,7 +1,30 @@
 <template name="allSessions">
-{{#each restateSessions}}
-  <button class="session_go">Session: {{this._id}}</button><br><br>
-{{/each}}
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        
+  
+        <button id="new_session_button">Start New Session</button><br><br>
+        
+        All Sessions:<br>
+        <br>
+        
+        
+        <i>
+         To do: for a user dashboard (if you are logged in) we should show only your sessions.
+         
+         <br>
+         Then only for people who want to be helpers do we show them all the sessions and the number of counts
+        </i>
+        <br><br>
+        
+        {{#each restateSessions}}
+          <button class="session_go">Session: {{this._id}}</button> {{this.no_restates_done}} restates<br><br>
+        {{/each}}
+  
+      </div>
+    </div>
+  </div>
 </template>
 
 

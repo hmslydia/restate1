@@ -1,5 +1,5 @@
 <template name="restateSession">
-<div class='container'>
+  <div class='container'>
     <div class='row'>
       <div class='col-md-12'>
          <!--<button id="test"> console.log the data context</button>-->
@@ -11,8 +11,11 @@
              </div>
              <div class='col-md-4'>
                {{#each situationRestate}}
-                  <b>helper</b>: {{helper_restate}}        
+                  <b>helper</b>: {{helper_restate}} <br>       
                {{/each}}
+               
+               <textarea id="addSituationRestate"></textarea>
+               <button id="addSituationRestateButton">Add</button>
              </div>
            </div>         
          </div>
@@ -25,8 +28,11 @@
              </div>
              <div class='col-md-4'>
                {{#each thoughtsRestate}}
-                  <b>helper</b>: {{helper_restate}}        
+                  <b>helper</b>: {{helper_restate}} <br>       
                {{/each}}
+               
+               <textarea id="addThoughtsRestate"></textarea>
+               <button id="addThoughtsRestateButton">Add</button>               
              </div>
            </div>         
          </div>
@@ -39,8 +45,11 @@
              </div>
              <div class='col-md-4'>
                {{#each feelingsRestate}}
-                  <b>helper</b>: {{helper_restate}}        
+                  <b>helper</b>: {{helper_restate}}    <br>    
                {{/each}}
+
+               <textarea id="addFeelingsRestate"></textarea>
+               <button id="addFeelingsRestateButton">Add</button>               
              </div>
            </div>         
          </div>
@@ -52,12 +61,23 @@
               {{this.restateSession.behaviors}}<br>
              </div>
              <div class='col-md-4'>
-               {{#each behaviorRestate}}
-                  <b>helper</b>: {{helper_restate}}        
+               {{#each behaviorsRestate}}
+                  <b>helper</b>: {{helper_restate}}  <br>      
                {{/each}}
+
+               <textarea id="addBehaviorsRestate"></textarea>
+               <button id="addBehaviorsRestateButton">Add</button>               
              </div>
            </div>         
-         </div>        
+         </div>   
+         <div class='row'>
+            <div class='col-md-4'>  
+             </div>
+             <div class='col-md-4'>
+              <button id="done"> Done </button>  
+             </div>
+           </div> 
+            
       </div>
     </div> 
   </div>   
